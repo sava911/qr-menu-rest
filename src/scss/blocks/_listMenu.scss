@@ -1,0 +1,21 @@
+.list-menu {
+  // border-top: 5px solid #000;
+  // border-top-right-radius: 5%;
+  // border-top-left-radius: 5%;
+  padding-top: 50px;
+
+  &__items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item a {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+  }
+}

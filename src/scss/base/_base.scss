@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  display: block;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+}

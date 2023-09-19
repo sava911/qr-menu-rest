@@ -1,0 +1,21 @@
+.header {
+  background-color: #eae7e7;
+  padding: 10px 0;
+
+  &__row,
+  .buttons_wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+
+
+}
+
+.buttons_wr {
+  button+button {
+    margin-left: 20px;
+  }
+}
