@@ -1,12 +1,17 @@
-.list-menu {
+.border-top {
   position: absolute;
   // border-top: 5px solid #000;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  padding: 50px 0;
+  padding: 20px 0;
   width: 100%;
-  top: 325px;
+  top: 345px;
   background: #fff;
+}
+
+.list-menu {
+  padding: 30px 0 50px;
+
 
   &__items {
     display: grid;

@@ -1,2 +1,4 @@
 import slideBanner from './modules/banner.js';
-slideBanner();
+import slideCatalog from './modules/catalog.js';
+// slideBanner();
+// slideCatalog();
