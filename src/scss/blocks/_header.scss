@@ -1,9 +1,9 @@
 .header {
-  background-color: #eae7e7;
+  background-color: #000;
+  color: #fff;
   padding: 10px 0;
 
-  &__row,
-  .buttons_wr {
+  &__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,11 +11,20 @@
 
   }
 
-
-}
-
-.buttons_wr {
-  button+button {
-    margin-left: 20px;
+  &__icon {
+    width: 40px;
+    padding: 5px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
   }
+
+
 }
+
+// .buttons_wr {
+
+//   button+button {
+//     margin-left: 20px;
+//   }
+// }

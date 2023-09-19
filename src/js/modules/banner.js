@@ -24,7 +24,7 @@ function slideBanner() {
 
     // Display the current slide and mark its corresponding dot as active
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    // dots[slideIndex - 1].className += "active";
   }
 
   // Function to advance to the next slide
