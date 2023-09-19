@@ -27,7 +27,11 @@
     justify-content: space-between;
   }
 
-  &__title {}
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+
+  }
 
   &__sale {}
 
@@ -54,7 +58,8 @@
   &__btn {
     border-radius: 10px;
     border: 1px solid #000;
-
+    background: #fff;
+    text-align: center;
 
     img {
       width: 100%;

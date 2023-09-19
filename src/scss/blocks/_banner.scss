@@ -1,3 +1,31 @@
+.banner {
+  position: relative;
+}
+
+.banner__icon {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  span {
+
+
+    color: #000;
+    background: #fff;
+    border: 1px solid #FFDF00;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 9999;
+  }
+}
+
+// css slider
 .slider-container {
   width: 100%;
   position: relative;
