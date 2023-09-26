@@ -1,10 +1,13 @@
 .catalog {
-  border: 2px solid #000;
+  border: 2px solid var(--dark);
   border-radius: 15px;
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25),
+    0 8px 16px -8px rgba(0, 0, 0, .3),
+    0 -6px 16px -6px rgba(0, 0, 0, .025);
 
   img {
     width: 100%;
@@ -42,8 +45,8 @@
   }
 
   &__link {
-    background: #000;
-    color: #fff;
+    background: var(--dark);
+    color: var(--wh);
     padding: 10px;
     text-align: center;
     border-radius: 15px;
@@ -57,8 +60,8 @@
 
   &__btn {
     border-radius: 10px;
-    border: 1px solid #000;
-    background: #fff;
+    border: 1px solid var(--dark);
+    background: var(--wh);
     text-align: center;
 
     img {

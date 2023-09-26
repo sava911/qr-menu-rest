@@ -1,8 +1,8 @@
 .footer {
-  background-color: #000;
+  background-color: var(--dark);
   padding: 20px 0;
   font-size: 32px;
-  color: #fff;
+  color: var(--wh);
 
   .icons {
     display: grid;
@@ -12,7 +12,7 @@
 
   .icon {
     padding: 10px;
-    background: #fff;
+    background: var(--wh);
     text-align: center;
     border-radius: 15px;
   }
