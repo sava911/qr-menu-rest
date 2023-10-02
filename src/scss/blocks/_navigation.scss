@@ -1,0 +1,49 @@
+.navigation {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+
+  @extend %scroll-hidden;
+
+
+  &__icon {
+    min-width: 65px;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    // width: 50px;
+    // height: 50px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // padding: 10px 15px;
+    // margin-right: 10px;
+    min-width: 90px;
+    height: 50px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    // background: var(--gr);
+    border-radius: 15px;
+    font-weight: 500;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__btn img {
+    width: 20px;
+    height: 20px;
+    // object-fit: cover;
+    // width: 100%;
+  }
+}

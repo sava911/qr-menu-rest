@@ -19,3 +19,33 @@
   --page-bg: #252526;
   --text-color: #fff;
 }
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+
+  padding-bottom: 5px;
+}
+
+.title-block {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted var(--dark);
+  width: 60%;
+
+  span {
+    font-size: 19px;
+  }
+
+}
+
+%scroll-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE и Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
