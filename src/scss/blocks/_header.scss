@@ -3,6 +3,13 @@
   color: var(--wh);
   padding: 10px 0;
 
+  &__buttons-wr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
@@ -11,8 +18,16 @@
 
   }
 
+  &__link-news {
+    color: var(--dark);
+    background: var(--wh);
+    padding: 7px 10px;
+    border-radius: 10px;
+    // margin-left: 10px;
+  }
+
   &__icon {
-    width: 40px;
+    width: 32px;
     padding: 5px;
     background: var(--wh);
     text-align: center;
