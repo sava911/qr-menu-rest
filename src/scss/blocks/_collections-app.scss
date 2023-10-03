@@ -1,0 +1,43 @@
+.collections-app {
+  &__items {
+    display: grid;
+
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item img {
+    height: 190px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    @extend %shed;
+    filter: brightness(0.8);
+
+    margin-bottom: 20px;
+  }
+
+  &__item-inner {
+    min-width: 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    background: var(--title);
+
+    letter-spacing: .24px;
+    padding: 10px 20px;
+    border-bottom-right-radius: 15px;
+  }
+
+  &__item-text {}
+
+  &__item-title {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}

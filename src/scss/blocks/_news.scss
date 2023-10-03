@@ -1,6 +1,7 @@
 .news {
 
   padding-top: 10px;
+  margin-bottom: 40px;
 
 
   &__items {
@@ -19,6 +20,7 @@
     margin-bottom: 10px;
     height: 150px;
     width: 100%;
+    filter: brightness(0.8);
   }
 
   &__item {
