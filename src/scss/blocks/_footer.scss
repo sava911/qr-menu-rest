@@ -1,8 +1,10 @@
 .footer {
-  background-color: var(--dark);
-  padding: 20px 0;
-  font-size: 32px;
-  color: var(--wh);
+  &__icons-inner {
+    background-color: var(--dark);
+    padding: 20px 0;
+    font-size: 32px;
+    color: var(--wh);
+  }
 
   .icons {
     display: grid;

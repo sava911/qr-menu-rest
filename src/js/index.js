@@ -1,4 +1,4 @@
 import slideBanner from './modules/banner.js';
-// import slideCatalog from './modules/catalog.js';
+import accordion from './modules/accordion.js';
 slideBanner();
-// slideCatalog();
+accordion();

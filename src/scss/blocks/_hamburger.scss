@@ -9,7 +9,7 @@
 label .menu {
   position: absolute;
   left: 10px;
-  top: 10px;
+  top: 20px;
   z-index: 100;
   width: 40px;
   height: 40px;
@@ -94,7 +94,7 @@ label input:checked+.menu+ul {
 label ul {
   z-index: 200;
   position: absolute;
-  top: 50%;
+  top: 350px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
