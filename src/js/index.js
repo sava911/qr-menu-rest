@@ -1,5 +1,8 @@
 import slideBanner from './modules/banner.js';
-import accordion from './modules/accordion.js';
+import tabs from './modules/tabs.js';
+// import accordion from './modules/accordion.js';
 slideBanner();
-accordion();
+tabs();
+
+
 

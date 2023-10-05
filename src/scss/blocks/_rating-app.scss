@@ -22,9 +22,9 @@
     padding-top: 10px;
     background: var(--gr);
     border-radius: 15px;
-    font-weight: 500;
     color: var(--dark);
     position: relative;
+    display: inline-grid;
 
     img {
       position: absolute;
@@ -102,5 +102,32 @@
     font-size: 32px;
     line-height: 34px;
     font-weight: 500;
+  }
+
+
+
+}
+
+.tabs {
+
+  .tabs__items {
+    display: none;
+
+    &.tabs__active-btn {
+      display: grid;
+    }
+  }
+
+  .tabs__btn {
+    font-weight: 700;
+
+
+    &.tabs__active-btn {
+      pointer-events: none;
+      background: var(--accent);
+      color: var(--dark);
+
+
+    }
   }
 }
