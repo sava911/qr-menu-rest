@@ -6,6 +6,7 @@ function slideBanner() {
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
 
+
     let slideIndex = 0;
 
     function showSlide() {
