@@ -1,48 +1,47 @@
+
+
 function slideBanner() {
-  let slideIndex = 1;
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("dot");
 
-  // Function to show a specific slide
-  function showSlides(n) {
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
+  document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
 
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
+    let slideIndex = 0;
 
-    // Remove the "active" class from all dots
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    function showSlide() {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      dots.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+
+      slides[slideIndex].classList.add("active");
+      dots[slideIndex].classList.add("active");
+
+      animateDots();
     }
 
-    // Display the current slide and mark its corresponding dot as active
-    slides[slideIndex - 1].style.display = "block";
-    // dots[slideIndex - 1].className += "active";
-  }
+    function animateDots() {
+      dots.forEach((dot) => {
+        dot.classList.remove("fade-in");
+      });
+      dots[slideIndex].classList.add("fade-in");
+    }
 
-  // Function to advance to the next slide
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
+    function nextSlide() {
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      showSlide();
+    }
 
-  // Function to navigate to a specific slide
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
-  }
+    setInterval(nextSlide, 3000);
 
-  // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
-  setInterval(function () {
-    plusSlides(1);
-  }, 5000);
+    showSlide();
+  });
 
-  // Initialize the slider
-  showSlides(slideIndex);
 }
+
 export default slideBanner;

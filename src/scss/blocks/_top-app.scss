@@ -11,11 +11,42 @@
     color: var(--wh);
 
     span {
-      background: var(--accent);
-      padding: 15px 10px 15px 5px;
-      border-radius: 10px;
+
       color: var(--dark);
     }
+
+    @keyframes ripple {
+      from {
+        opacity: 0.5;
+      }
+
+      to {
+        opacity: 0;
+        transform: scale(6);
+      }
+    }
+
+    .ripple {
+      position: relative;
+    }
+
+    .ripple,
+    .ripple::after {
+      background: var(--accent);
+      padding: 15px 10px;
+      border-radius: 10px;
+    }
+
+    .ripple::after {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      content: "";
+      z-index: -1;
+      animation: ripple 1s ease-out 0s infinite;
+    }
+
+
   }
 
   &__subtitle {
@@ -90,4 +121,7 @@
   }
 
   &__delimiter {}
+
+
+
 }
