@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- @@include('blocks/header.html') -->
+@@include('blocks/header/header-page.html')
+@@include('blocks/banner/banner.html')
+<main class="main-page">
+  <!-- @@include('blocks/listMenu.html') -->
+  @@include('blocks/main/main-app.html')
+</main>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>МенюМСК</title>
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
-
-<body>
-  <!-- @@include('blocks/header.html') -->
-  @@include('blocks/header-page.html')
-  @@include('blocks/banner.html')
-  <main class="main-page">
-    <!-- @@include('blocks/listMenu.html') -->
-    @@include('blocks/main-app.html')
-  </main>
-
-  @@include('blocks/footer.html')
-  <script src="./js/index.bundle.js"></script>
-</body>
-
-</html>
+@@include('blocks/footer/footer.html')

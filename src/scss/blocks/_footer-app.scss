@@ -1,68 +1,68 @@
-.accordion {
-  // max-width: 1170px;
-  margin: 40px auto 0;
-}
+// .accordion {
+//   // max-width: 1170px;
+//   margin: 40px auto 0;
+// }
 
-.at-tab p {
-  margin-bottom: 10px;
-  letter-spacing: 0.1rem;
-}
+// .at-tab p {
+//   margin-bottom: 10px;
+//   letter-spacing: 0.1rem;
+// }
 
-.at-tab {
-  display: none;
-  padding: 15px;
-  border: 1px solid #dddddd;
-  border-top: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
+// .at-tab {
+//   display: none;
+//   padding: 15px;
+//   border: 1px solid #dddddd;
+//   border-top: none;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//   background-color: #fff;
+// }
 
-.at-menu li a {
-  padding: 5px 0;
-  margin-bottom: 10px;
-  font-weight: 500;
-  border-bottom: 1px solid #000;
-}
+// .at-menu li a {
+//   padding: 5px 0;
+//   margin-bottom: 10px;
+//   font-weight: 500;
+//   border-bottom: 1px solid #000;
+// }
 
-.at-title {
-  background-color: #f5f5f5;
-  position: relative;
-  transition: background-color 0.3s ease;
-}
+// .at-title {
+//   background-color: #f5f5f5;
+//   position: relative;
+//   transition: background-color 0.3s ease;
+// }
 
-.at-title:hover {
-  background-color: var(--accent);
-}
+// .at-title:hover {
+//   background-color: var(--accent);
+// }
 
-.at-title:after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-  transition: all 0.3s ease;
-  font-size: 24px;
-}
+// .at-title:after {
+//   content: "+";
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   right: 10px;
+//   transition: all 0.3s ease;
+//   font-size: 24px;
+// }
 
-.at-title.active:after {
-  content: "-";
-}
+// .at-title.active:after {
+//   content: "-";
+// }
 
-.at-item {
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
+// .at-item {
+//   border-radius: 5px;
+//   margin-bottom: 15px;
+// }
 
-.at-title h2 {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px 15px;
-  margin: 0;
-}
+// .at-title h2 {
+//   font-size: 18px;
+//   font-weight: 600;
+//   padding: 10px 15px;
+//   margin: 0;
+// }
 
-.accordion-header {
-  text-align: center;
-  background-color: #222222;
-  color: white;
-  padding: 20px 0;
-}
+// .accordion-header {
+//   text-align: center;
+//   background-color: #222222;
+//   color: white;
+//   padding: 20px 0;
+// }

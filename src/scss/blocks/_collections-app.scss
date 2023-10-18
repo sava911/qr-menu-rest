@@ -1,6 +1,7 @@
 .collections-app {
   &__items {
     display: grid;
+    margin-bottom: 20px;
 
   }
 
@@ -33,7 +34,17 @@
     border-bottom-right-radius: 15px;
   }
 
-  &__item-text {}
+  &__btn {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+    @extend %shed;
+    font-size: 18px;
+    // line-height: 24px;
+    font-weight: 500;
+
+  }
 
   &__item-title {
     font-size: 22px;
