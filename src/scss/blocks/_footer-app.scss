@@ -27,12 +27,18 @@
   // max-width: 483px;
 }
 
-// h10 {
-//   font-size: 12px;
-//   margin-left: 5px !important;
-//   letter-spacing: 0.8px;
-//   font-family: Arial !important;
-// }
+.rating-app {
+  .setting-description {
+    background-color: var(--dark);
+
+  }
+
+  .setting-description-text {
+    color: var(--wh);
+
+  }
+
+}
 
 .setting-description-text {
   padding-top: 18px !important;
