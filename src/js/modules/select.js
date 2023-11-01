@@ -1,40 +1,64 @@
 export default function select(first) {
-  let select = document.querySelector('select');
 
-  select.addEventListener('focus', () => {
-    select.size = 5;
-    select.classList.add('fadeIn');
-    select.classList.remove('fadeOut');
-    select.style.backgroundColor = '#FFF';
-  });
+  const selectedAll = document.querySelectorAll(".wrapper-dropdown");
 
-  select.addEventListener('blur', () => {
-    select.size = 1;
-    select.classList.add('fadeOut');
-    select.classList.remove('fadeIn');
-    select.style.backgroundColor = '#FFF';
-  });
+  selectedAll.forEach((selected) => {
+    const optionsContainer = selected.children[2];
+    const optionsList = selected.querySelectorAll("div.wrapper-dropdown li");
 
-  select.addEventListener('change', () => {
-    select.size = 1;
-    select.blur();
-    select.style.backgroundColor = '#FFF';
-  });
+    selected.addEventListener("click", () => {
+      let arrow = selected.children[1];
 
-  select.addEventListener('mouseover', () => {
-    if (select.size == 1) {
-      select.style.backgroundColor = 'rgb(247, 247, 247)';
-    }
-  });
-  select.addEventListener('mouseout', () => {
-    if (select.size == 1) {
-      select.style.backgroundColor = '#FFF';
-    }
-  });
+      if (selected.classList.contains("active")) {
+        handleDropdown(selected, arrow, false);
+      } else {
+        let currentActive = document.querySelector(".wrapper-dropdown.active");
 
-  document.querySelector('select').addEventListener('change', function () {
-    document.querySelectorAll('.tab__select').forEach((n, i) => {
-      n.classList.toggle('active-select', i === this.selectedIndex);
+        if (currentActive) {
+          let anotherArrow = currentActive.children[1];
+          handleDropdown(currentActive, anotherArrow, false);
+        }
+
+        handleDropdown(selected, arrow, true);
+      }
     });
+
+    // update the display of the dropdown
+    for (let o of optionsList) {
+      o.addEventListener("click", () => {
+        selected.querySelector(".selected-display").innerHTML = o.innerHTML;
+      });
+    }
   });
+
+  // check if anything else ofther than the dropdown is clicked
+  window.addEventListener("click", function (e) {
+    if (e.target.closest(".wrapper-dropdown") === null) {
+      closeAllDropdowns();
+    }
+  });
+
+  // close all the dropdowns
+  function closeAllDropdowns() {
+    const selectedAll = document.querySelectorAll(".wrapper-dropdown");
+    selectedAll.forEach((selected) => {
+      const optionsContainer = selected.children[2];
+      let arrow = selected.children[1];
+
+      handleDropdown(selected, arrow, false);
+    });
+  }
+
+  // open all the dropdowns
+  function handleDropdown(dropdown, arrow, open) {
+    if (open) {
+      arrow.classList.add("rotated");
+      dropdown.classList.add("active");
+    } else {
+      arrow.classList.remove("rotated");
+      dropdown.classList.remove("active");
+    }
+  }
+
+
 }
