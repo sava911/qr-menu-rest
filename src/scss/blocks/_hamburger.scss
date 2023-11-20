@@ -79,7 +79,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 130%;
+    width: 100%;
     left: -14%;
   }
 
@@ -95,7 +95,7 @@
     }
   }
 
-  &__item {
+  li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +127,7 @@
     }
   }
 
-  &__link {
+  a {
     font-size: 24px;
     letter-spacing: 0.1em;
     text-decoration: none;

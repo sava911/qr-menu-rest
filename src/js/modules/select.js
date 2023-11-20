@@ -4,7 +4,7 @@ export default function select(first) {
 
   selectedAll.forEach((selected) => {
     const optionsContainer = selected.children[2];
-    const optionsList = selected.querySelectorAll("div.wrapper-dropdown li");
+    const optionsList = selected.querySelectorAll("div.wrapper-dropdown li a");
 
     selected.addEventListener("click", () => {
       let arrow = selected.children[1];

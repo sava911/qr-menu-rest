@@ -137,13 +137,13 @@ svg {
   visibility: hidden;
 }
 
-.wrapper-dropdown .dropdown li {
+.wrapper-dropdown .dropdown a {
   padding: 0 15px;
   line-height: 45px;
   overflow: hidden;
 }
 
-.wrapper-dropdown .dropdown li:last-child {
+.wrapper-dropdown .dropdown a:last-child {
   border-bottom: none;
 }
 
@@ -151,9 +151,10 @@ svg {
   padding: 0.5rem !important;
 }
 
-.wrapper-dropdown .dropdown li:hover {
+.wrapper-dropdown .dropdown a:hover {
   background-color: rgb(35, 40, 49);
   border-radius: 10px;
+  color: var(--wh);
 }
 
 .wrapper-dropdown.active .dropdown {
