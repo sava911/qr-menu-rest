@@ -89,7 +89,7 @@
     <div class="catalog-info__bottom">
       <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-      <button class="catalog-info__btn">
+      <button class="catalog-info__btn add-to-cart" href="#" data-name="Сибас" data-price="500" data-img="img/fish.jpg">
         <img src="./img/star-wh.svg" alt="">
       </button>
 
@@ -114,7 +114,7 @@
     <div class="catalog-info__bottom">
       <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-      <button class="catalog-info__btn">
+      <button class="catalog-info__btn add-to-cart" href="#" data-name="Сибас" data-price="500" data-img="img/fish.jpg">
         <img src="./img/star-wh.svg" alt="">
       </button>
 
@@ -139,7 +139,7 @@
     <div class="catalog-info__bottom">
       <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-      <button class="catalog-info__btn">
+      <button class="catalog-info__btn add-to-cart" href="#" data-name="Сибас" data-price="500" data-img="img/fish.jpg">
         <img src="./img/star-wh.svg" alt="">
       </button>
 
@@ -164,7 +164,7 @@
     <div class="catalog-info__bottom">
       <a href="menu-mess.html" class="catalog-info__link">Подробнее</a>
 
-      <button class="catalog-info__btn">
+      <button class="catalog-info__btn add-to-cart" href="#" data-name="Сибас" data-price="500" data-img="img/fish.jpg">
         <img src="./img/star-wh.svg" alt="">
       </button>
 
@@ -176,9 +176,35 @@
 
       </div>
 
+      <div class="cd-cart-container empty">
+        <a href="#0" class="cd-cart-trigger">
+          <ul class="count"> <!-- cart items count -->
+            <li id="count-cart">0</li>
+            <li>0</li>
+          </ul> <!-- .count -->
+        </a>
+        <div class="cd-cart">
+          <div class="wrapper">
+            <header>
+              <h2>Корзина</h2>
+              <span class="undo visible"><a href="#0" id="clear-cart">Очистить</a></span>
+            </header>
 
+            <div class="body">
+              <ul id="show-cart">
+                <li>???????</li>
+              </ul>
+            </div>
+
+            <footer>
+              <a href="#0" class="checkout btn"><em>К оплате - <span id="total-cart">0</span> ₽</em></a>
+            </footer>
+          </div>
+        </div>
+      </div>
 
     </div>
+
   </section>
 
 
@@ -211,6 +237,7 @@
   </div>
 
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./js/index.bundle.js"></script>
 </body>
 
