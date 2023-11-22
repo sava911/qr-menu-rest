@@ -1,7 +1,155 @@
 @@include('blocks/header/header-page.html')
-@@include('blocks/banner/banner.html')
+@@include('blocks/banner/banner-rest-page.html')
 <main class="main-page">
-  @@include('blocks/main/main-rest-page.html')
+  @@include('blocks/elements/border-top.html')
+  @@include('blocks/elements/navigation.html')
+
+  <!-- 1 описние русторана -->
+  <section class="rest-des">
+    <div class="container">
+      <h3 class="rest-des_title">RICO</h3>
+      <h4 class="rest-des__subtitle">Arusya Gukasyan</h4>
+      <p class="rest-des__text">Ресторан Rico - это уютный гастрономический салон, созданный шеф-поваром Арусей Гукасян.
+        Внутри всего несколько
+        столиков, обстановка напоминает домашнюю обстановку, а вместо обычной барной стойки здесь установлено пианино. В
+        ресторане нет обычного меню: закуски представлены в прозрачном холодильнике, а основные блюда, такие как рыба
+        или мясо,
+        готовятся прямо при посетителях из выбранных продуктов. Владелица заведения лично обслуживает посетителей,
+        рекомендует
+        блюда и рассказывает о предложениях дня. В Rico не подают алкоголь, однако посетители могут принести с собой
+        свои
+        напитки. Место идеально подходит для небольших празднований в уютной обстановке...</p>
+    </div>
+  </section>
+  <!-- 2 конткты адресс номер кнопки-->
+  <section class="rest-adr">
+    <div class="container">
+      <div class="rest-adr__inner">
+        <div class="rest-adr__btns">
+          <div class="rest-adr__btns-top">
+            <a class="rest-adr__btn">Написать</a>
+            <a class="rest-adr__btn">Меню</a>
+          </div>
+          <a class="rest-adr__btn">Позвонить</a>
+        </div>
+        <address class="rest-adr__address">
+          <b>Телефон:</b><a href="tell:+79999999999">+7 999 999 99 99</a><br />
+          <b>Адрес:</b> <a href="!#">Ружейный пер. 6/2</a><br />
+          <b>Режим работы:</b> <a href="!#">11:00 до 23:00</a><br />
+
+          <b>Район:</b><a href="!#">Хамовники</a><br />
+          <b>Метро:</b><a href="!#">Смоленская</a><br />
+          <b>Группа / Сеть:</b><a href="!#">Arusya Gukasyan</a><br />
+          <b>Сайт:</b> <a href="http://www.somedomain.com/contact">www.rico-rest.ru</a>.<br />
+
+
+        </address>
+      </div>
+    </div>
+  </section>
+  <!-- 4 галерея как rest-gal  -->
+  <section class="rest-gal">
+    <div class="container">
+
+
+      <div class="rest-gal__items">
+        <div href="menu-mess.html" class="rest-gal__item">
+          <img class="rest-gal__item" src="./img/rico-2.jpg" alt="">
+        </div>
+        <div class="rest-gal__item">
+          <img src="./img/rico-1.jpg" alt="">
+        </div>
+        <div class="rest-gal__item">
+          <img src="./img/rico-4.jpg" alt="">
+        </div>
+        <div class="rest-gal__item">
+          <img src="./img/rico-3.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="rest-map">
+
+
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A5830862f6faadf303a26cc1d05811dc99dca10d340b7c3dc21cf3326e24038d2&amp;source=constructor"
+      width="100%" height="400" frameborder="0"></iframe>
+
+  </section>
+  <!-- 3 вопрос и ответ  -->
+  <section class="questions">
+    <div class="container">
+      <div class="rest-adr__inner">
+        <div class="questions__wrapper">
+          <div class="main-title">Часто задаваемые вопросы</div>
+          <label class="item" for="radioYour Account">
+            <div class="questions__title">Got Career Placement.</div>
+            <div class="content">
+              Our job placement department has helped more than 16,000 skilled students to find jobs in competitive
+              global
+              markets. Promising a better future, we have successfully raised the job placement rate to 66% by providing
+              continuous career support to the learners.
+            </div>
+          </label>
+          <label class="item" for="radioPayment &amp; Pricing">
+            <div class="questions__title">Success &amp; Ratio</div>
+            <div class="content">
+              Excelling at work needs hands-on experience. The practical approach towards problems puts our students
+              ahead
+              of
+              any other competitors in global job markets. All the courses are structured considering the job prospects
+              to
+              make
+              you well prepared for a bright career.
+            </div>
+          </label>
+          <label class="item" for="radioReturns &amp; Refunds">
+            <div class="questions__title">Works As &amp; Expert Freelancer</div>
+            <div class="content">
+              After course completion, a significant number of our students find jobs in multiple sectors. Many of the
+              devoted
+              students start working in the IT domain before completing the courses. Earning dollars from the global
+              marketplace, they become self-reliant and contribute to the progress of our country.
+            </div>
+          </label>
+          <label class="item" for="radioShipping &amp; Pickup">
+            <div class="questions__title">Students Choose &amp; Creative IT</div>
+            <div class="content">
+              Creative IT has become a trusted training institute for not only Bangladeshi residents but also living
+              abroad.
+              More than 60,000 passionate learners are working in different markets after completing courses from our
+              institute.
+            </div>
+          </label>
+          <label class="item" for="radioViewing &amp; Changing Orders">
+            <div class="questions__title">Lifetime &amp; Support</div>
+            <div class="content">
+              Creative IT and its students share a lifetime bond. We strengthen our bond with you by providing lifelong
+              support
+              that helps you overcome any problem in your career path even after completing your course. Our expert
+              support team
+              ensures 24 hours service to all of our students. The personalized feedback that you receive from us, helps
+              you
+              grow, every day.
+            </div>
+          </label>
+        </div>
+        <div class="rest-revie">
+
+          <div style="max-width: 760px;height:800px;overflow:hidden;position:relative;"><iframe
+              style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+              src="https://yandex.ru/maps-reviews-widget/1147358213?comments"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 карта  -->
+
+  @@include('blocks/elements/collections-app.html')
 </main>
 
 @@include('blocks/footer/footer.html')

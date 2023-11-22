@@ -12,6 +12,9 @@
   --accent: #ffdf00;
   --num: rgba(255, 223, 0, 0.8);
   --title: rgba(193, 193, 193, 0.8);
+  --gold: #c8a755;
+  --blue: #427D9D;
+  --green: #DDF2FD;
 
   --laptop-size: 1199px;
   --tablet-size: 959px;
@@ -46,7 +49,7 @@
 .delimiter {
   text-align: center;
   padding: 10px;
-    background: var(--dark);
+  background: var(--dark);
   font-family: var(--font-ralway);
   color: var(--wh);
 

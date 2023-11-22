@@ -35,6 +35,8 @@ function slideBanner() {
       if (slideIndex >= slides.length) {
         slideIndex = 0;
       }
+
+
       showSlide();
     }
 
