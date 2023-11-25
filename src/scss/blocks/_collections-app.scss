@@ -1,5 +1,7 @@
 .collections-app {
+  padding-top: 20px;
   margin-bottom: 40px;
+
   &__items {
     display: grid;
     margin-bottom: 20px;
@@ -11,7 +13,7 @@
   }
 
   &__item img {
-    height: 190px;
+    height: 230px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

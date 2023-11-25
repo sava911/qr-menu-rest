@@ -1,4 +1,5 @@
-export default function hamburger(second) {
+export default function hamburger() {
+
   document.querySelector('.js-menu').addEventListener('click', () => {
 
     document.querySelector('.js-menu').classList.toggle('active');
@@ -28,13 +29,6 @@ export default function hamburger(second) {
   });
 
 
-  window.addEventListener('scroll', function () {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition >= 200) {
-      document.querySelector(".header-fixed").classList.add("with-effect");
-    } else {
-      document.querySelector(".header-fixed").classList.remove("with-effect");
-    }
-  });
+
 
 }

@@ -30,6 +30,21 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+
+    .menu {
+      left: unset;
+      right: 0;
+    }
+
+    .nav {
+      left: unset;
+      right: -15px;
+    }
+
+    .nav.open {
+
+      right: -14%;
+    }
   }
 
   &__row {
